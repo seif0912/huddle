@@ -26,6 +26,7 @@ body {
 
 a {
     text-decoration: none;
+    color: unset;
 }
 
 ul {
@@ -69,12 +70,16 @@ ul {
 }
 
 .attribution {
-    font-size: 11px;
+    margin-top: 50px;
+    padding: 25px;
+    font-size: 16px;
     text-align: center;
+    color: white;
+    background-color: #111;
 }
 
 .attribution a {
-    color: hsl(228, 45%, 44%);
+    color: var(--Very-Pale-Cyan);
 }
 
 
@@ -109,7 +114,7 @@ ul {
     font-weight: 600;
     font-size: 18px;
     border-radius: 5em;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, .2);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .1);
     transition: .3s;
 }
 
@@ -220,7 +225,9 @@ ul {
 /* start the cards section */
 
 .cards {
-    margin: 150px auto;
+    margin: 150px auto 0;
+    padding-bottom: 250px;
+    position: relative;
 }
 
 .cards .card {
@@ -255,12 +262,13 @@ ul {
 
 @media (max-width: 787px) {
     .cards {
-        margin: 75px auto;
+        margin: 75px auto 0;
+        padding-bottom: 50px;
     }
     .cards .card {
         flex-direction: column;
         text-align: center;
-        margin-bottom: 50px;
+        margin-bottom: 250px;
     }
     .cards .card .info {
         margin: 40px;
@@ -274,5 +282,140 @@ ul {
     }
 }
 
+.cards .box {
+    background-color: white;
+    position: absolute;
+    bottom: -100px;
+    width: fit-content;
+    left: 50%;
+    transform: translatex(-50%);
+    border-radius: 15px;
+    padding: 50px 20px;
+    text-align: center;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, .1);
+}
+
+.cards .box h1 {
+    text-transform: capitalize;
+    margin: 20px 50px;
+    color: var(--Very-Dark-Cyan);
+    font-family: "Poppins";
+}
+
+.cards .box a {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 20px 80px;
+    color: white;
+    font-weight: bold;
+    border-radius: 5em;
+    background-color: var(--Pink);
+    transition: .3s;
+    text-transform: capitalize;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, .25);
+}
+
+.cards .box a:hover {
+    opacity: .75;
+}
+
+@media (max-width: 787px) {
+    .cards .box {
+        width: 90%;
+    }
+    .cards .box a {
+        font-size: 18px;
+        padding: 15px 60px;
+    }
+    .cards .box h1 {
+        font-size: 26px;
+    }
+}
+
 
 /* end the cards section */
+
+
+/* start the Footer section */
+
+footer {
+    background-color: var(--Very-Dark-Cyan);
+    color: white;
+    padding-top: 200px;
+}
+
+footer img {
+    margin-bottom: 30px;
+    filter: invert(100%) sepia(100%) saturate(100%) hue-rotate(360deg) brightness(100%) contrast(100%);
+}
+
+footer .boxes {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    margin-right: 120px;
+}
+
+footer .boxes .box {
+    color: var(--Grayish-Blue);
+    width: fit-content;
+}
+
+footer .boxes .box .text {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    margin: 0;
+    width: 380px;
+    margin-bottom: 20px;
+}
+
+@media (max-width:787px) {
+    footer .boxes {
+        flex-direction: column;
+        gap: 50px;
+        margin-bottom: 40px;
+    }
+}
+
+footer .boxes .box .text p {
+    margin: 0;
+    margin-left: 20px;
+}
+
+footer .boxes .box .text img {
+    filter: invert(0%) sepia(100%) saturate(100%) hue-rotate(360deg) brightness(100%) contrast(100%);
+}
+
+footer .boxes .box .text:not(:first-child) img {
+    margin: 0;
+}
+
+footer .boxes .box a {
+    transition: .2s;
+}
+
+footer .boxes .box a:hover {
+    color: white;
+}
+
+footer .boxes .box:not(:last-child) a {
+    display: block;
+    margin-bottom: 20px;
+}
+
+footer .boxes .box:last-child a {
+    display: inline-block;
+    border: 2px solid var(--Grayish-Blue);
+    border-radius: 5em;
+    padding: 5px;
+    margin-right: 5px;
+}
+
+footer .copy {
+    display: block;
+    text-align: end;
+}
+
+
+/* end the Footer section */

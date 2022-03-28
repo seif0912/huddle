@@ -20,15 +20,13 @@
 
   Your Users
 
-  It takes no time at all to integrate Huddle with your app's authentication solution. 
-  This means, once signed in to your app, your users can start chatting immediately.
+  It takes no time at all to integrate Huddle with your app's authentication solution. This means, once signed in to your app, your users can start chatting immediately.
 
   Ready To Build Your Community?
 
   Get Started For Free
 
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-  incididunt ut labore et dolore magna aliqua
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
 
   +1-543-123-4567
   example@huddle.com
@@ -42,3 +40,13 @@
   Contact Us
 
   &copy; Copyright 2018 Huddle. All rights reserved.
+
+
+/* start the Footer section */
+
+footer {
+    background-color: var(--Very-Dark-Cyan);
+}
+
+
+/* end the Footer section */
