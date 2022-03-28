@@ -215,3 +215,64 @@ ul {
 
 
 /* end Main section */
+
+
+/* start the cards section */
+
+.cards {
+    margin: 150px auto;
+}
+
+.cards .card {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, .1);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.cards .card .info {
+    margin-left: 100px;
+}
+
+.cards .card .info h1 {
+    text-transform: capitalize;
+    color: var(--Very-Dark-Cyan);
+}
+
+.cards .card .info p {
+    width: 90%;
+    color: var(--Grayish-Blue);
+}
+
+.cards .card .image {
+    margin: 50px 25px;
+}
+
+.cards .card .image img {
+    width: 100%;
+}
+
+@media (max-width: 787px) {
+    .cards {
+        margin: 75px auto;
+    }
+    .cards .card {
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .cards .card .info {
+        margin: 40px;
+        order: 1;
+    }
+    .cards .card .info h1 {
+        font-size: 26px;
+    }
+    .cards .card .info p {
+        width: 100%;
+    }
+}
+
+
+/* end the cards section */
